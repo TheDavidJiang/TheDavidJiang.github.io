@@ -5,35 +5,163 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>My Website</title>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./styles.css">
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
 </head>
 
 <body>
 <!-- navbar, about me section, projects, skills/languages, footer -->
+<nav class="fixed_top">
+    <ul>
+        
+        <li><a href="#">David</a></li>
+        <li><a href="#about_me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+    </ul>
+</nav>
 
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section -->
+<section id="intro">
+    <div>
+        <p>
+            Hello! My name is David Jiang. I am a
+            <p>
+                Software Developer
+                <!--Make these typeout 
+                    Medical assistant, 
+                    pokemon master, 
+                    archery enthusiast, 
+                    Yayas Tea enjoyer,
+                    Chumbud -->
+            </p>
+            in Brooklyn, New York
+        </p>
+    </div>
+    <div>
+        <img src="images/doge.jpg" class="w3-circle" alt="davidjiang">
+    </div>
+</section>
+
+
 <section id="about_me">
-    <p>
-        Hello David
-    </p>
+    <div class="about_me">
+        <h2 class="center">About me</h2>
+        <p>I graduated from Stony Brook University with a Bachelors in Health Science and a concentration in Emergency and Critical Care. I really enjoyed working with my teams to provide the best possible care for patients. Along the way, I found that I had a strong desire to create projects of my own, whether it be documentation using spreadsheets, using functions to dynamically engage with numbers, etc.</p>
+
+        <p>I was initially drawn to the problem solving aspect of coding, and I found that I enjoyed creating small projects using code that I've created. I've attained the skills and knowledge to become a Software Developer through Thinkful's Software Engineering Immersion Program and I am self-taught in Python. </p>
+
+        <p>In my free time, I like to play games, browse memes, and take naps. My 3 favorite games are: </p>
+
+      <ol>
+        <li>League of Legends</li>
+        <li>Maplestory</li>
+        <li>Pokémon GO</li>
+      </ol>
+    </div>
+
 </section>
 
 <section id="projects">
     <!-- images that when i click on them redirects to the project page -->
-    <div class="project_card">
-        <img src="#" alt="#">
-        <p>description</p>
+    
+    <h2 class="center">Projects</h2>
+
+    <div class="displayList">
+        <div class="project_card">
+            <a href="https://github.com/TheDavidJiang/LeagueTeam.gg">
+                <!-- <img src="https://www.dndbeyond.com/avatars/thumbnails/30783/955/1000/1000/638062024584880857.png" alt="goblin"> -->
+                <img src="/TheDavidJiang.github.io/images/LoL_icon.svg.png" alt="LeagueTeam" >
+            </a>
+            <p class="center">LeagueTeam.gg</p>
+        </div>
+        <div class="project_card">
+            <a href="https://github.com/TheDavidJiang/starter-restaurant-reservation">
+                <!-- <img src="https://www.dndbeyond.com/avatars/thumbnails/30832/207/1000/1000/638063832924455756.png" alt="kobold"> -->
+                <img src="/TheDavidJiang.github.io/images/hiring-restaurant-manager-immediate-start-immediat-red-grunge-label-sticker-badge-print-colors-used-101214291.jpg" alt="restaurant_manager">
+            </a>
+            <p class="center">Restaurant Manager</p>
+        </div>
+        <div class="project_card">
+            <a href="https://github.com/TheDavidJiang/GrubDash">
+                <img src="https://archives.bulbagarden.net/media/upload/0/0d/025Pikachu.png" alt="pikachu">
+            </a>
+            <p class="center">GrubDash</p>
+        </div>
+
     </div>
+
+
+        
 </section>
 
 <section id="skills">
-    <div class="skills_card">
-        <img src="#" alt="#">
-        <p>description</p>
+    <h2 class="center">Skills</h2>
+    <div class="displayList">
+        <div class="skills_card">
+            <div class="myDiv">
+                <img src="images/htmlicon.png" alt="html">
+            </div>
+            <div class="hide">HTML</div>
+        </div>
+        <div class="skills_card">
+            <div class="myDiv">
+                <img src="images/css_logo.png" alt="css">
+            </div>
+    
+            <div class="hide">CSS</div>
+        </div>
+        <div class="skills_card">
+            <div class="myDiv">
+                <img src="images/javascript.png" alt="javascript">
+            </div>
+            <div class="hide">Javascript</div>
+        </div>
     </div>
+    <div class="displayList">
+        <div class="skills_card">
+            <div class="myDiv">
+                <img src="images/React-icon.svg.png" alt="html">
+            </div>
+            <div class="hide">React</div>
+        </div>
+        <div class="skills_card">
+            <div class="myDiv">
+                <img src="images/Postgresql_elephant.svg.png" alt="css">
+            </div>
+    
+            <div class="hide">PostgreSQL</div>
+        </div>
+        <div class="skills_card">
+            <div class="myDiv">
+                <img src="images/Python-logo-notext.svg.png" alt="javascript">
+            </div>
+            <div class="hide">Python</div>
+        </div>
+    </div>
+    
 </section>
 
-</body>
+<section id="contact">
+    <h2 class="center">Contact</h2>
+    <ul class="center">
+        <li><a href="https://www.linkedin.com/in/david-jiang-450297196/">Connect with me on Linkedin</a></li>
+        <li><a href="https://github.com/TheDavidJiang"> Check out my GitHub </a></li>
+    </ul>
+</section>
 
+<footer>
+
+    <nav>
+        <ul>
+            <li><a href="#">David</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+
+    </nav>
+</footer>
+
+    </body>
 </htmL>
