@@ -2,7 +2,7 @@ function changeDescription(value){
     document.getElementById("descriptions").innerHTML=value;
 }
 
-let myDescriptions = ["hi", "hello", "wassup"];
+let myDescriptions = ["Medical Assistant", "Pokemon Master", "Archery Enthusiast", "Yayas Tea Enjoyer", "Software Developer"];
 let index = 0;
 
 function nextDescription(){
@@ -20,5 +20,4 @@ function nextDescription(){
 setInterval(() => {
     changeDescription(myDescriptions[index]);
     nextDescription();
-    console.log("this is index: ", index)
 }, 3000);
