@@ -4,7 +4,7 @@ body{
 
 #intro{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* padding-top: 5%; */
     background-color: #BBC5AA;
 }
@@ -116,4 +116,24 @@ ul{
 
 #content{
     margin-top: 45px;
+}
+
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid orange; The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .15em; Adjust as needed */
+    animation: 
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.image-cropper{
+    overflow: hidden;
+    border-radius: 50%;
 }
